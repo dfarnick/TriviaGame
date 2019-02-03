@@ -1,0 +1,14 @@
+body{
+    background-image: url(/assets/images/background.jpg);
+}
+#startButton{
+    color: white;
+    background-color: black;
+    font-size:30px;
+
+}
+#resetButton {
+    color: white;
+    background-color: black;
+    font-size: 30px;
+}
