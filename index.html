@@ -6,20 +6,56 @@
     <title>Trivia Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <script src="app.js"></script>
 </head>
 
-<body>
-
-        <header>
-            <h1>Trivia You Say... Guess N' Check I Say</h1>
+<body>    
+        <header id="mastHead">
+            <img id="backImg" src="assets/images/background.jpg">
+            <h1>Diddle Diddle Diddle, Time For A Riddle</h1>
         </header>
-       
-        <div id="timeremaing"></div>
-        <div id="question"></div>
-        <div id="answer"></div>
+        <div id= "timeleft"><span></span></div>
+
+
+        <form id = "quiz" name= "quiz">
+            <p>"I cannot be bought, but I can be stolen with one glance. I'm worthless to one but priceless to two."</p>
+            <input type="radio" id= "mc" name="questionOne" value = "love">Love<br>
+            <input type="radio" id= "mc" name="questionOne" value = "hate">Hate<br>
+            
+            <p>"I am the son of water but if water touches me I die."</p>           
+            <input type="radio" id= "mc" name="questionTwo" value= "salt">Salt<br>
+            <input type="radio" id= "mc" name="questionTwo" value= "sugar">Sugar<br>
+
+            <p>"What can't you have for breakfast and lunch."</p>           
+            <input type="radio" id= "mc" name="questionThree" value= "brunch">Brunch<br>
+            <input type="radio" id= "mc" name="questionThree" value= "dinner">Dinner<br>
+
+            <p>"What must be broken before it can be used."</p>           
+            <input type="radio" id= "mc" name="questionFour" value= "eggs">Eggs<br>
+            <input type="radio" id= "mc" name="questionFour" value= "glowstick">Glow stick<br>
+            
+            <p>"I can fill a room or just one heart. Others may have me but I can not be shared."</p>           
+            <input type="radio" id= "mc" name="questionFive" value= "loneliness">Loneliness<br>
+            <input type="radio" id= "mc" name="questionFive" value= "gas">Gas<br>
+
+            <p>"I can fill a room or just one heart. Others may have me but I can not be shared."</p>           
+            <input type="radio" id= "mc" name="questionSix" value= "a teammate">A Teammate<br>
+            <input type="radio" id= "mc" name="questionSix" value= "an individual">An Individual<br>
+
+            <input  type="submit" id = "buttoncheck" value = "Feeling Lucky">
+          </form>
+
+        <div id= "after-submit">
+                <h2><span id="correct"></span>
+                </br>
+                    <span id="incorrect"></span></h2>
+         </div>
+         <div id="timeOut">
+                <h2><span id="outOfTime"></span></h2>
+         </div>
         <button type="button" id="startButton" class="btn btn-danger">Start Game!</button>
         <button type="button" id="resetButton" class="btn btn-success">Reset Game?</button>
     
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       <script type="text/javascript" src="assets\javascript\app.js"></script>
 </body>
 </html>
