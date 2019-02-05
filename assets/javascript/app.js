@@ -123,6 +123,8 @@ function stop() {
     $("#incorrect").html('Incorrect: ' + incorrect);
     $("#resetButton").show();       
         });
+
+        //////tried to get the reset button to 'uncheck' the radios. Couldn't get it to take.
     $("#resetButton").on("click", function(){      
         newGame();
         startTimer();
